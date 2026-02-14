@@ -1,0 +1,81 @@
+body {
+  background: #f6f8fb;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+  margin: 16px auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: #2f2f2f;
+  border: 1px solid #e5e7eb;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cell:focus {
+  outline: none;
+}
+
+.cell.error {
+  background: #ffd6d6;
+  color: #b91c1c;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.validate {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.clear {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.success {
+  color: #16a34a;
+  margin-top: 12px;
+}
+
+.errorText {
+  color: #dc2626;
+  margin-top: 12px;
+}
