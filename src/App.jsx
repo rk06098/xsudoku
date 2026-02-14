@@ -75,7 +75,7 @@ export default function App() {
   return (
     <div className="container">
       <h1>Sudoku Validator</h1>
-      <p className="subtitle">Enter numbers 1–9 and validate the board.</p>
+      <p className="subtitle">Enter numbers 1-9 and validate the board.</p>
 
       <div className="board">
         {board.map((row, r) =>
